@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+    
+    <header class="text-gray-600 body-font" style="overflow: hidden;
+    background-color:whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100%;">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Charm Vehicle Servicing</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+
+       
+
+
+
+<!--
+            <a class="mr-5 hover:text-gray-900" href="home_page.html" onMouseOver="this.style.color='red'"
+            onMouseOut="this.style.color='green'">HOME</a>
+        -->
+
+            
+
+        <a class="mr-5 hover:text-gray-900" href="home_page.html">HOME</a>
+        <a class="mr-5 hover:text-gray-900" href="services1.html">SERVICES</a>
+        <a class="mr-5 hover:text-gray-900" href="contact_us.html">CONTACT US</a>
+        <a class="mr-5 hover:text-gray-900" href="about_us.html">ABOUT US</a>
+      </nav>
+      <a href="sign_up.html">
+        <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">LOG-
+        OUT
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero container max-w-screen-lg mx-auto text-center pb-10" style="margin-top: 96px;">
+    <div class="flex items-center justify-center">
+  <p>Hello {$userquery->username}! How are you?</p>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

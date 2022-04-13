@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th{
+          color:#fff;
+        }
+      </style>
+</head>
+<body>
+    <table class="table table-striped">
+        <tr class="bg-info">
+          <th>username</th>
+          <th>services</th>
+        </tr>
+      
+        <tbody id="myTable">
+      
+        </tbody>
+      </table>
+      <script>
+        var myuarray = {"user"[
+          {
+              username: "kailas",
+              services: [
+                  "Vehicle Monitoring",
+                  "Online Booking",
+                  "Safety Inspection"
+              ]
+          },
+          {
+              username: "admin",
+              services: [
+                  "Online Booking",
+                  "Vehicle Monitoring",
+                  "Last Servicing"
+              ]
+          },
+          {
+              username: "academia",
+              services: [
+                  "Safety Infection",
+                  "Vehicle Monitoring",
+                  "Online Booking",
+              ]
+          }
+      ]};
+      buildTable(myarray)
+      
+      function buildTable(data){
+        var table = document.getElementById('myTable')
+      
+        for (var i = 0; i < data.length; i++){
+          var row = <tr>
+            <td>${data[i].username}</td>
+            <td>${data[i].services}</td>
+            </tr>
+            table.innerhtml += row
+        }
+      }
+      
+      </script>
+
+
+
+
+
+switch ($role) {
+    case 'user':
+        $redirect = 'user.php';
+    break;
+    case 'moderator':
+        $redirect = 'moderator.php';
+    break;
+    case 'administrator':
+        $redirect = 'administrator.php';
+    break;
+}
+
+header('Location: ' . $redirect);
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+  
+ 

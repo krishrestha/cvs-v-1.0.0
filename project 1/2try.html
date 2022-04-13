@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="kai()">
+    <span id="hehe"></span>
+    <p id="demo"></p>
+    <script>
+       // document.getElementById("hehe").innerHTML=localStorage.getItem("textvalue");
+       var user = [
+    {
+        username: "kailas@gmail.com",
+        services: [
+            "Vehicle Monitoring",
+            "Online Booking",
+            "Safety Inspection"
+        ]
+    },
+    {
+        username: "academia@gmIl.com",
+        services: [
+            "Safety Infection",
+            "Vehicle Monitoring",
+            "Online Booking",
+        ]
+    }
+]
+    var uname = localStorage.getItem("textvalue")
+    document.getElementById("hehe").innerHTML = uname;
+    function kai(){
+        i = 0 ;
+    if (uname == user[i].username)
+    document.getElementById("demo").innerHTML = user[i].services;
+    //console.log(user[i].services)
+    i =+ 1 ;
+    }
+  </script>
+  
+</body>
+</html>
